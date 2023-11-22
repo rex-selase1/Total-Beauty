@@ -1,0 +1,212 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+/* font family for body  = open sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500&display=swap');
+
+/* font family for headings   = Lato*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500&display=swap');
+
+/* Universal styling */
+
+
+*{
+    font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+
+}
+h1,h2,h3,h4{
+    font-family: 'Lato' , 'Open Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* universal styling ends here */
+
+/* Media Queries */
+
+/* media query for desktop */
+
+@media only screen and (min-width:1200px) {
+
+    /* signin and up page  starts*/
+.signup-body{
+width: 100vw;
+height: 100vh;
+background-image: url(./imgaes/signup-image.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: left center;
+display: flex;
+}
+.login-form{
+    position: absolute;
+    width: 25%;
+    border: 2px solid;
+   top: 15%;
+   left: 56%;
+   background-color: white;
+   z-index: 3333;
+   opacity: 50;
+}
+.login-form form {
+    display: grid;
+    width: 90% ;
+    margin: 20px auto;
+}
+.login-form h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 10px;
+    text-align: center;
+}
+.login-form form input{
+    margin: 15px 0;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(156, 154, 154);
+}
+.login-form form input::placeholder{
+    font-weight: 500;
+    position: absolute;
+  
+    margin-left: 1%;
+    font-size: 18px;
+}
+.login-form form button{
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    width: 40%;
+    border: none;
+    background-color: rgb(13, 15, 10);
+    color: white;
+    transition: 0.2s ease forward;
+    
+}
+.login-form form button:hover{
+background-color: rgb(50, 49, 48);
+color: white;
+
+}
+.login-form #signup-btn{
+    width: 60%;
+    background-color: purple;
+}
+.login-form #signup-btn:hover{
+    background-color: rgb(172, 5, 172);
+    color: white;
+}
+.login-form form fieldset{
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    text-align: center;
+    
+}
+.login-form form fieldset legend{
+    text-transform: lowercase;
+}
+.login-form p{
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+    font-size: 13px;
+}
+.login-form a {
+    text-decoration: none;
+    color: rgb(54, 54, 244);
+}
+
+
+
+/* sign in and up page ends here */
+
+
+/* Homepage section starts here */
+
+
+.homepage-body{
+    width: 100vw;
+    font-family: 'open sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: rgb(66, 59, 49);
+}
+.logoAndButtons{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: 6px;
+}
+.logoAndButtons .logo{
+    display: flex;
+    color: white;
+
+}
+.logoAndButtons .profileAndCart{
+    display: flex;
+}
+.s-section{
+    width: 60%;
+    height: 100%;
+}
+.s-section .searchButton{
+    /* margin-right: -5.5px; */
+    padding: 9.9px;
+    height: 70%;
+    margin: 6px -5.5px 6px ;
+    border-radius: 10px 0px 0px 10px;
+}
+.s-section #searchBar{
+width: 80%;
+height: 70%;
+justify-content: center;
+align-items: center;
+margin: 6px;
+margin-left: 0;
+border-radius: 0px 10px 10px 0px;
+}
+.category-menu{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(37, 53, 53);
+
+}
+.category-menu ul{
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+   
+    
+}
+.category-menu ul li{
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* Homepage section ends here */
+
+
+}
+
+/* Media queries for desktop ends here */
+
+/* End of All Media Queries */
