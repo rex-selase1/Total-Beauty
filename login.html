@@ -12,14 +12,14 @@
       
         
         
-            <form action="" method="post">
+            <form action="#">
 
                 <h1>Welcome to Total Beauty</h1>
                 
                <input type="text" placeholder="username or phone" id="username">
-               <input type="password" name="" id="password" placeholder="password..">
+               <input type="password" name="" id="password" placeholder="password">
 
-               <button type="submit" id="login-btn">Log In</button>
+               <button type="submit" id="login-btn" >Log In</button>
 
                <fieldset>
                 <legend>or</legend>
@@ -36,24 +36,15 @@
             </form>
     
     </section>
-    <script>
-
-        const user = document.querySelector('#username');
-        const password = document.querySelector('#password');
-        const login = document.querySelector('#login-btn');
-
-       function loginUser(){
-if(user.value == "selase" && password.value == "01234"){
-    
-}
-       };
-
-       login.addEventListener('click', loginUser);
-
-   
-
-
-
-    </script>
+  <a href="./homepage.html" style="color: black; font-weight: 600;"><button>Next page</button></a>
 </body>
+
+<!-- <script>
+
+    const login = document.getElementById('login-btn');
+ function loginUser(){
+location.assign("https://twitter.com");
+ }
+ login.addEventListener('click',loginUser);
+</script> -->
 </html>
